@@ -5,9 +5,9 @@ def osszead(szam1, szam2):
         visszatér a két szám összegével.
     """
     pass # Írd a kódodat a következő sorokba!
+    return szam1 + szam2
 
-
-#assert osszead(14, -8) == 6
+assert osszead(14, -8) == 6
 #---------------------------------------------------------
 
 def kisebb(szam1, szam2):
@@ -15,10 +15,13 @@ def kisebb(szam1, szam2):
         visszatér a kisebbel.
     """
     pass # Írd a kódodat a következő sorokba!
+    if szam1 > szam2:
+        return szam2
+    else:
+        return szam1
 
-
-#assert kisebb(10, -7) == -7
-#assert kisebb(-10, 7) == -10
+assert kisebb(10, -7) == -7
+assert kisebb(-10, 7) == -10
 #---------------------------------------------------------
 
 def nagyobb(szam1, szam2):
@@ -26,10 +29,14 @@ def nagyobb(szam1, szam2):
         visszatér a nagyobbal.
     """
     pass # Írd a kódodat a következő sorokba!
-        
+    if szam1 > szam2:
+        return szam1
+    else:
+        return szam2
+ 
 
-#assert nagyobb(12, -8) == 12
-#assert nagyobb(-12, -8) == -8
+assert nagyobb(12, -8) == 12
+assert nagyobb(-12, -8) == -8
 #---------------------------------------------------------
 
 def szamtani_kozep(szam1, szam2):
@@ -46,11 +53,10 @@ def negyzet_kerulet(oldal):
     """ A függvény egy négyzet oldalhosszát kapja bemenetként és 
         visszatér a négyzet kerületével.
     """
-    pass # Írd a kódodat a következő sorokba!
-
-
-#assert negyzet_kerulet(5) == 20
-#assert negyzet_kerulet(5.1) == 20.4
+    pass #
+    return oldal * 4
+assert negyzet_kerulet(5) == 20
+assert negyzet_kerulet(5.1) == 20.4
 #---------------------------------------------------------
  
 def negyzet_terulet(oldal):
@@ -58,9 +64,9 @@ def negyzet_terulet(oldal):
         visszatér a négyzet területével.
     """    
     pass # Írd a kódodat a következő sorokba!
+    return oldal * oldal
 
-
-#assert negyzet_terulet(5.0) == 25.0
+assert negyzet_terulet(5.0) == 25.0
 #---------------------------------------------------------
  
 def teglalap_kerulet(oldal1, oldal2):
@@ -68,7 +74,7 @@ def teglalap_kerulet(oldal1, oldal2):
         visszatér a téglalap kerületével.
     """
     pass # Írd a kódodat a következő sorokba!
-
+    return oldal1 * oldal2
 
 #assert teglalap_kerulet(5, 6) == 22
 #---------------------------------------------------------
@@ -78,7 +84,7 @@ def teglalap_terulet(oldal1, oldal2):
         visszatér a téglalap területével.
     """
     pass # Írd a kódodat a következő sorokba!
-
+    return 2 * oldal1 + 2 * oldal2
 
 #assert teglalap_terulet(5, 6) == 30          
 #---------------------------------------------------------
@@ -88,10 +94,10 @@ def kulonbseg(szam1, szam2):
         visszatér a két szám különbségével.
     """    
     pass # Írd a kódodat a következő sorokba!
+    return szam1 - szam2
 
-
-#assert kulonbseg(5, 6) == -1
-#assert kulonbseg(6, 5) == 1
+assert kulonbseg(5, 6) == -1
+assert kulonbseg(6, 5) == 1
 #---------------------------------------------------------     
 
 def maradek(szam1, szam2):
@@ -99,10 +105,10 @@ def maradek(szam1, szam2):
         visszatér a két szám osztásának maradékával.
     """    
     pass # Írd a kódodat a következő sorokba!
+    return szam1 % szam2
 
-
-###assert maradek(9, 4) == 1
-###assert maradek(8, 4) == 0
+assert maradek(9, 4) == 1
+assert maradek(8, 4) == 0
      
 #---------------------------------------------------------      
 
@@ -112,7 +118,7 @@ def paros(szam):
         False-al ha a szám páratlan.
     """    
     pass # Írd a kódodat a következő sorokba!
-
+    return 
 
 #assert paros(12) == True
 #assert paros(13) == False
