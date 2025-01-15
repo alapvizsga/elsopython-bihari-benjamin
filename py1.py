@@ -43,10 +43,10 @@ def szamtani_kozep(szam1, szam2):
     """ A függvény két számot kap és 
         visszatér a számtani középpel.
     """
-    pass # Írd a kódodat a következő sorokba!
+    pass 
+    return (szam1 + szam2) / 2
 
-
-#assert szamtani_kozep(3, 5) == 4.0
+assert szamtani_kozep(3, 5) == 4.0
 #---------------------------------------------------------
  
 def negyzet_kerulet(oldal):
@@ -74,9 +74,9 @@ def teglalap_kerulet(oldal1, oldal2):
         visszatér a téglalap kerületével.
     """
     pass # Írd a kódodat a következő sorokba!
-    return oldal1 * oldal2
+    return (oldal1 + oldal2) * 2
 
-#assert teglalap_kerulet(5, 6) == 22
+assert teglalap_kerulet(5, 6) == 22
 #---------------------------------------------------------
  
 def teglalap_terulet(oldal1, oldal2):
@@ -84,9 +84,9 @@ def teglalap_terulet(oldal1, oldal2):
         visszatér a téglalap területével.
     """
     pass # Írd a kódodat a következő sorokba!
-    return 2 * oldal1 + 2 * oldal2
+    return oldal1 * oldal2
 
-#assert teglalap_terulet(5, 6) == 30          
+assert teglalap_terulet(5, 6) == 30          
 #---------------------------------------------------------
  
 def kulonbseg(szam1, szam2):
@@ -118,10 +118,13 @@ def paros(szam):
         False-al ha a szám páratlan.
     """    
     pass # Írd a kódodat a következő sorokba!
-    return 
+    if szam % 2 == 0:
+        return True
+    else:
+        return False
 
-#assert paros(12) == True
-#assert paros(13) == False
+assert paros(12) == True
+assert paros(13) == False
 #---------------------------------------------------------
 
 def kettovel_oszthato(szam):
@@ -130,9 +133,12 @@ def kettovel_oszthato(szam):
         False-al ha nem.
     """    
     pass # YOUR CODE HERE
-
-###assert kettovel_oszthato(12) == True
-###assert kettovel_oszthato(13) == False
+    if szam % 2 == 0:
+        return True
+    else:
+        return False   
+assert kettovel_oszthato(12) == True
+assert kettovel_oszthato(13) == False
      
 
 #---------------------------------------------------------    
@@ -142,10 +148,13 @@ def harommal_oszthato(szam):
         False-al ha nem.
     """    
     pass # Írd a kódodat a következő sorokba!
+    if szam % 3 == 0:
+        return True
+    else:
+        return False
 
-
-#assert harommal_oszthato(15) == True
-#assert harommal_oszthato(16) == False     
+assert harommal_oszthato(15) == True
+assert harommal_oszthato(16) == False     
 #---------------------------------------------------------
 
 def hettel_oszthato(szam):
@@ -154,10 +163,13 @@ def hettel_oszthato(szam):
         False-al ha nem.
     """    
     pass # Írd a kódodat a következő sorokba!
+    if szam % 7 == 0:
+        return True
+    else:
+        return False
 
-
-#assert hettel_oszthato(21) == True
-#assert hettel_oszthato(22) == False           
+assert hettel_oszthato(21) == True
+assert hettel_oszthato(22) == False           
 #---------------------------------------------------------
 
 def kocka_terfogat(oldal):
@@ -165,19 +177,20 @@ def kocka_terfogat(oldal):
         a kocka térfogatával tér vissza.
     """    
     pass # Írd a kódodat a következő sorokba!
-
+    return oldal * oldal * oldal
  
-#assert kocka_terfogat(2) == 8
-#assert kocka_terfogat(3) == 27          
+assert kocka_terfogat(2) == 8
+assert kocka_terfogat(3) == 27          
 #---------------------------------------------------------
 def teglatest_terfogat(a, b, c):
     """ A függvény bemenetként megkapja a téglatest oldalainak hosszúságát és 
         a téglatest térfogatával tér vissza.
     """    
-    pass # Írd a kódodat a következő sorokba!
+    pass
+    return a * b * c 
 
 
-#assert teglatest_terfogat(2, 3, 4) == 24      
+assert teglatest_terfogat(2, 3, 4) == 24      
 #---------------------------------------------------------
 
 def derekszogu_haromszog_terulet(befogo1, befogo2):
@@ -186,18 +199,18 @@ def derekszogu_haromszog_terulet(befogo1, befogo2):
     """    
 
     pass # Írd a kódodat a következő sorokba!
+    return (befogo1 * befogo2) / 2
 
-
-#assert derekszogu_haromszog_terulet(3, 4) == 6      
+assert derekszogu_haromszog_terulet(3, 4) == 6      
 #---------------------------------------------------------
 def derekszogu_haromszog_atfogo(befogo1, befogo2):
     """ A függvény bemenetként megkapja a befogók hosszát és 
         az átfogó hosszával tér vissza.
     """    
     pass # Írd a kódodat a következő sorokba!
+    return (befogo1**2+befogo2**2)**0.5 
 
-
-#assert derekszogu_haromszog_atfogo(3, 4) == 5.0     
+assert derekszogu_haromszog_atfogo(3, 4) == 5.0     
 #---------------------------------------------------------
 
 def negyzet_atloja(oldal):
@@ -205,9 +218,9 @@ def negyzet_atloja(oldal):
         az átló hosszával tér vissza.
     """    
     pass # Írd a kódodat a következő sorokba!
-    
+    return (oldal**2+oldal**2)**0.5
 
-#assert round(negyzet_atloja(10),5) == round(14.142135623730951,5)
+assert round(negyzet_atloja(10),5) == round(14.142135623730951,5)
 #---------------------------------------------------------
 
 def teglalap_atloja(a, b):
@@ -215,19 +228,21 @@ def teglalap_atloja(a, b):
         az átló hosszával tér vissza.
     """    
     pass # Írd a kódodat a következő sorokba!
+    return (a**2+b**2)**0.5
 
 
-#assert teglalap_atloja(3, 4) == 5.0
-#assert teglalap_atloja(6, 8) == 10.0
+assert teglalap_atloja(3, 4) == 5.0
+assert teglalap_atloja(6, 8) == 10.0
 #---------------------------------------------------------
 
 def abszolut(szam):
     """ A függvény a bemenő paraméterként kapott szám 
         abszolút értékével tér vissza.
     """    
-    pass # Írd a kódodat a következő sorokba!
+    pass
+    return abs(szam)
 
 
-#assert abszolut(-7) == 7
-#assert abszolut( 0) == 0
+assert abszolut(-7) == 7
+assert abszolut( 0) == 0
 #========================================
